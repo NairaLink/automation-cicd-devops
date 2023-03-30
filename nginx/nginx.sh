@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
 cd ~
-wget http://nginx.org/download/nginx-1.18.0.tar.gz
-tar -zxvf nginx-1.18.0.tar.gz
+wget http://nginx.org/download/nginx-1.23.0.tar.gz
+tar -zxvf nginx-1.23.0.tar.gz
 
 apt-get update
 apt-get install build-essential
@@ -24,7 +24,7 @@ cd njs
 ./configure
  make
 
-cd ~/nginx-1.18.0
+cd ~/nginx-1.23.0
 ./configure --sbin-path=/usr/bin/nginx \
             --conf-path=/etc/nginx/nginx.conf \
             --error-log-path=/var/log/nginx/error.log \
